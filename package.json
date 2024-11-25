@@ -3,6 +3,8 @@
   "displayName": "Api Folder Generator",
   "description": "Vs Code extension to generate api structure and some files to get going for api project",
   "version": "0.0.1",
+  "publisher": "AmireJoseph",
+  "icon": "images/apilogo.png",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -14,8 +16,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "api-folder-gen.helloWorld",
-        "title": "Hello World"
+        "command": "api-folder-gen.generateFolder",
+        "title": "Generate Folders"
       }
     ]
   },
