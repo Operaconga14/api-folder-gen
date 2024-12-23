@@ -16,8 +16,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "api-folder-gen.generateFolder",
-        "title": "Generate Folders"
+        "command": "api-folder-gen.generateApi",
+        "title": "Generate API"
       }
     ]
   },
