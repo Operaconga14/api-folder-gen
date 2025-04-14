@@ -1,176 +1,184 @@
-# API Project Generator💡
+# API Project Generator 💡
 
 ![MIT License](https://img.shields.io/static/v1.svg?label=📜%20License&message=MIT&color=informational)
 
-💌 💓
+The **API Project Generator** is a Visual Studio Code extension designed to streamline the creation of API projects by automating folder structure setup, file generation, and package management. It provides a user-friendly interface for quickly generating a boilerplate for APIs, offering options for various levels of complexity: Simple, Advanced, and Complex.
 
-he API Project Generator is a Visual Studio Code extension designed to streamline the creation of API projects by automating folder structure setup, file generation, and package management. It provides a user-friendly interface to quickly generate a boilerplate for APIs, offering options for different levels of complexity: Simple, Advanced, and Complex.
+## VS Code Marketplace Url
+
+[API Folder Generator](https://marketplace.visualstudio.com/items?itemName=AmireJoseph.api-folder-gen)
 
 ## Features
 
-- Folder Structure Customization:
-  Automatically creates folders such as controllers, routes, config, middlewares, models, services, and more based on the selected complexity.
-  Supports three predefined folder structures:
-  Simple: Minimal structure with controllers and routes.
-  Advanced: Includes additional folders like config, middlewares, models, and utils.
-  Complex: Adds services and tests folders for comprehensive project organization.
-  File Generation:
+### Folder Structure Customization
 
-- Automatically generates a server file (server.js or server.ts) in the preferred language: JavaScript or TypeScript.
-  Prepopulated boilerplate code for the server file is included.
-  Integration with npm:
+-   Automatically creates essential folders such as controllers, routes, config, middlewares, models, services, and more, based on the selected complexity.
+-   **Predefined folder structures**:
+    -   **Simple**: Minimal structure with controllers and routes.
+    -   **Advanced**: Includes additional folders like config, middlewares, models, and utils.
+    -   **Complex**: Adds services and tests folders for a comprehensive project organization.
 
-- Automatically initializes a package.json file with scripts for starting and developing the API.
-  Provides an option to install necessary npm packages like express directly from the interface.
-  Customizable Extensions:
+### File Generation
 
-- Supports both JavaScript and TypeScript, allowing users to select their preferred development environment.
-  Interactive Workflow:
+-   Automatically generates a `server.js` or `server.ts` file in your preferred language (JavaScript or TypeScript).
+-   Prepopulated boilerplate code for the server file to kickstart your project.
 
-- Utilizes VS Code's Quick Pick menus for an intuitive and guided setup process.
-  Offers flexibility to choose automation or manual configuration for certain steps, such as npm initialization.
-  Ease of Use:
+### Integration with npm
 
-- Automatically updates package.json with relevant fields and scripts.
-  Prompts for optional installation of key dependencies to kickstart development
+-   Automatically initializes a `package.json` file with scripts for starting and developing the API.
+-   Option to install necessary npm packages, such as Express, directly from the interface.
+
+### Customizable Extensions
+
+-   Supports both JavaScript and TypeScript, allowing users to select their preferred development environment.
+
+### Interactive Workflow
+
+-   Utilizes VS Code’s Quick Pick menus for an intuitive and guided setup process.
+-   Offers flexibility to choose automation or manual configuration for certain steps, such as npm initialization.
+
+### Ease of Use
+
+-   Automatically updates `package.json` with relevant fields and scripts.
+-   Prompts for optional installation of key dependencies to kickstart development.
 
 ## Requirements
 
 ### 1. Environment
 
-VS Code: The extension runs inside VS Code.
-Node.js: Required to run npm commands for creating files and dependencies.
+-   **VS Code**: The extension runs inside Visual Studio Code.
+-   **Node.js**: Required to run npm commands for creating files and dependencies.
 
 ### 2. User Input
 
-API Complexity: Choose one:
-Simple: Basic folders like controllers and routes.
-Advanced: Adds more folders like config, models, and middlewares.
-Complex: Includes everything from the Advanced option plus services and tests.
-Programming Language: Choose either JavaScript or TypeScript.
-NPM Initialization: Decide whether to auto-generate package.json or do it manually.
-Install Packages: Choose whether to automatically install dependencies like express.
+-   **API Complexity**: Choose one:
+    -   **Simple**: Basic folders like controllers and routes.
+    -   **Advanced**: Adds more folders like config, models, and middlewares.
+    -   **Complex**: Includes everything from the Advanced option, plus services and tests.
+-   **Programming Language**: Choose between JavaScript or TypeScript.
+-   **NPM Initialization**: Decide whether to auto-generate `package.json` or do it manually.
+-   **Install Packages**: Choose whether to automatically install dependencies like Express.
 
 ### 3. Files and Folders Created
 
-Based on the selected API complexity, different folders and files will be created, like:
-controllers, routes, server.js/server.ts.
-Advanced and Complex setups add more like config, models, middlewares, services, and tests.
+Based on the selected API complexity, different folders and files will be created, such as:
+
+-   **Simple Setup**: `controllers`, `routes`, `server.js/server.ts`.
+-   **Advanced and Complex Setups**: Adds folders like `config`, `models`, `middlewares`, `services`, and `tests`.
 
 ### 4. Permissions
 
-Read/Write Access: Required to create files and folders in the project.
+-   **Read/Write Access**: Required to create files and folders in the project.
 
 ### 5. Dependencies
 
-VS Code API: To interact with the VS Code environment.
-Node.js Modules: For file handling (fs), path resolution (path), and running npm commands (child_process).
+-   **VS Code API**: To interact with the VS Code environment.
+-   **Node.js Modules**: For file handling (fs), path resolution (path), and running npm commands (child_process).
 
 ### 6. Error Handling
 
-Missing Folder: If no workspace is open, show an error.
-File Creation Errors: Handle and show errors if something goes wrong during file or folder creation.
+-   **Missing Folder**: If no workspace is open, an error message is displayed.
+-   **File Creation Errors**: Handles and shows errors if something goes wrong during file or folder creation.
 
 ### 7. Feedback to User
 
-Confirmation: Let the user know when things are done.
-Error Messages: Show warnings for any issues that arise.
+-   **Confirmation**: Users are notified when the process is complete.
+-   **Error Messages**: Show warnings for any issues that arise during setup.
 
 ## Extension Settings
 
-- Node.js Required: Ensure Node.js is installed to run npm commands for package management.
-
-- Nodemon Required: Ensure Nodemon is installed
+-   **Node.js Required**: Ensure Node.js is installed to run npm commands for package management.
+-   **Nodemon Required**: Ensure Nodemon is installed to facilitate development.
 
 ## Known Issues
 
-- Node.js Required: Ensure Node.js is installed to run npm commands for package management.
-
-- Nodemon Required: Ensure Nodemon is installed
+-   **Node.js Required**: Ensure Node.js is installed to run npm commands for package management.
+-   **Nodemon Required**: Ensure Nodemon is installed to facilitate development.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Version 1.0.0
-Release Date: December 17, 2024
+**Release Date**: December 17, 2024
 
-### New Features:
-#### <li> API Project Generator: </li>
+**New Features**:
 
-* Allows users to generate an API project structure with different levels of complexity: Simple, Advanced, and Complex.
+-   **API Project Generator**:
 
-* Simple: Creates basic controllers and routes folders.
+    -   Generate an API project structure with varying levels of complexity: Simple, Advanced, and Complex.
+    -   **Simple**: Basic structure with controllers and routes.
+    -   **Advanced**: Adds folders for config, middlewares, models, and utils.
+    -   **Complex**: Includes services and tests.
 
-* Advanced: Adds additional folders for config, middlewares, models, and utils.
+-   **Flexible Language Choice**:
 
-* Complex: Includes all of the above, plus services and tests folders.
+    -   Choose between JavaScript or TypeScript for your project files (`server.js/server.ts`).
 
-#### <li> Flexible Language Choice:</li>
+-   **Automatic `package.json` Generation**:
 
-* Choose between JavaScript and TypeScript for your project files (server.js/server.ts).
+    -   Option to automatically generate a `package.json` file with basic scripts for starting and developing the API.
 
-### <li> Automatic package.json Generation:</li>
+-   **Install Essential Packages**:
 
-* Option to automatically generate a package.json file and add basic scripts (start and dev).
+    -   Automatically installs important npm packages like Express, if selected by the user.
 
-#### <li> Install Essential Packages:</li>
+-   **VS Code Integration**:
+    -   Seamless integration with VS Code for easy creation of folders, files, and project setup.
 
-A* utomatically installs important npm packages like express if selected by the user.
+**Improvements**:
 
-#### <li>VS Code Integration:</li>
+-   **Simplified Setup**:
 
-* Seamless integration with VS Code for easy creation of folders, files, and project setup.
+    -   User-friendly prompts to guide users through selecting their preferred API structure, language, and package setup.
 
-#### <li>Improvements:</li>
+-   **Error Handling**:
 
-##### <li>Simplified Setup:</li>
-* User-friendly prompts to guide users through selecting their preferred API structure, language, and package setup.
+    -   Improved error messages for workspace or folder issues.
 
-##### <li> Error Handling: </li>
+-   **Clear Feedback**:
+    -   Detailed messages showing the success of folder and file creation, as well as npm command executions.
 
-* Improved error messages when workspace or folder issues arise.
+**Bug Fixes**:
 
-##### <li> Clear Feedback: </li>
+-   Fixed potential issues with folder creation if no workspace is open.
+-   Improved handling of invalid or missing file paths during project generation.
 
-* Detailed messages showing the success of folder and file creation, as well as npm command executions.
+### 1.1.0
 
+-   **Coming Soon**: AI-powered features for auto-generating complex API structures based on project requirements and AI-guided code suggestions.
 
-Fixed issue #.
-### 1.0.0
-* Fixed potential issues with folder creation if workspace is not open.
+---
 
-* Improved handling of invalid or missing file paths during project generation.
-<!-- ### 1.1.0 -->
+## Upcoming AI Features
 
-<!-- Added features X, Y, and Z. -->
+We are excited to announce the upcoming integration of **AI-powered features** to enhance your API development process:
 
-<!-- ---
+**Python API folder generator** option to choose either the api folder you want to generate is for nodejs or for python
 
-## Following extension guidelines
+**Support for other API package and libraries** support for other API libraries and packages :
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+| Node.js API Libraries | Python API Libraries |
+| --------------------- | -------------------- |
+| Express.js            | FastAPI              |
+| Koa.js                | Flask                |
+| Restify               | Falcon               |
+| Polka                 | Sanic                |
+| Micro                 | Hug                  |
+| Fastify               | Bottle               |
 
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+<!-- -   **Automated Testing**: Automatically generate unit tests and integration tests for your API endpoints based on the project structure. AI will suggest optimal testing strategies to ensure your API is robust and error-free.
 
-## Working with Markdown
+-   **Smart Code Suggestions**: The extension will offer intelligent code completion and suggestions tailored to your project's needs. Whether it's adding middleware or optimizing routes, AI will assist in writing high-quality, efficient code.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+These features will be available soon and will further automate and streamline the development process, providing even more value to your workflow. -->
 
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+---
 
-## For more information
+## For Support and Contact
 
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/) -->
+-   **Email**: amirejoseph83@gmail.com
+-   **USDT BNB (Binance Smart Chain)**: `0x52620572bc56AE24a7Ea0403Cf66989091714957`
 
- ## For Support and Contact
- * Email: amirejoseph83@gmail.com
- * USDT BNB (Binance Smart Chain) => 0x52620572bc56AE24a7Ea0403Cf66989091714957
-
+---
 
 **Enjoy!**
