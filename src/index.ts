@@ -10,7 +10,8 @@ import {
     advancedFolderStructure,
     complexFolderStructure,
     showErrorMessage,
-    showInformationMessage
+    showInformationMessage,
+    messageToFile
 } from "./utils/config";
 import { createAPIFolderWithAI } from "./commands/createApiFolderWithAi";
 import { createPythonAPIFolder } from "./commands/createPythonApiFolder";
@@ -19,6 +20,9 @@ import { runNodeCommand } from "./commands/runNodeCommand";
 import { runPythonCommand } from "./commands/runPythonCommand";
 import { createNodeFiles } from "./commands/createNodeFiles";
 import { createPythonFiles } from "./commands/createPythonFiles";
+import { runNodeFrameworkCommand } from "./commands/runNodeFrameworkCommand";
+import { createAndReadJsonFile } from "./commands/createAndReadJsonFile";
+import { runPackageJsonCommand } from "./commands/runNodeCommand";
 
 export {
     extensions,
@@ -31,6 +35,8 @@ export {
     simpleNodeFolderStructure,
     advancedFolderStructure,
     complexFolderStructure,
+    messageToFile,
+    runNodeFrameworkCommand,
     createAPIFolderWithAI,
     createPythonAPIFolder,
     createNodeAPIFolder,
@@ -39,5 +45,7 @@ export {
     showErrorMessage,
     showInformationMessage,
     createNodeFiles,
-    createPythonFiles
+    createPythonFiles,
+    createAndReadJsonFile,
+    runPackageJsonCommand
 };
