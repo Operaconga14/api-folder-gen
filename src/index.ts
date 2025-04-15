@@ -16,7 +16,6 @@ import {
 import { createAPIFolderWithAI } from "./commands/createApiFolderWithAi";
 import { createPythonAPIFolder } from "./commands/createPythonApiFolder";
 import { createNodeAPIFolder } from "./commands/createNodejsApiFolder";
-import { runNodeCommand } from "./commands/runNodeCommand";
 import { runPythonCommand } from "./commands/runPythonCommand";
 import { createNodeFiles } from "./commands/createNodeFiles";
 import { createPythonFiles } from "./commands/createPythonFiles";
@@ -40,7 +39,6 @@ export {
     createAPIFolderWithAI,
     createPythonAPIFolder,
     createNodeAPIFolder,
-    runNodeCommand,
     runPythonCommand,
     showErrorMessage,
     showInformationMessage,

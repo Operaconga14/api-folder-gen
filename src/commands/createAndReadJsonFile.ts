@@ -1,14 +1,16 @@
 import * as fsp from "fs/promises";
+import os from "os";
 import { extensions, messages, packageJsonPath, showErrorMessage, showInformationMessage } from "../utils/config";
 import { runPackageJsonCommand } from "./runNodeCommand";
 
 export async function createAndReadJsonFile(extensionType: string) {
-    await createPackageJsonFile();
+    await runPackageJsonCommand();
     try {
         const data = await fsp.readFile(packageJsonPath, "utf-8");
         const packageJson = JSON.parse(data);
 
         packageJson.description = `${packageJson.name}`;
+        packageJson.author = os.userInfo().username;
 
         switch (extensionType) {
             case extensions.javascript.name:
@@ -37,8 +39,4 @@ export async function createAndReadJsonFile(extensionType: string) {
     } catch (error) {
         showErrorMessage(error);
     }
-}
-
-export async function createPackageJsonFile() {
-    await runPackageJsonCommand();
 }

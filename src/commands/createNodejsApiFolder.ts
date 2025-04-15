@@ -15,6 +15,7 @@ import {
 import { createNodeFiles } from "./createNodeFiles";
 import { runNodeFrameworkCommand } from "./runNodeFrameworkCommand";
 import { createAndReadJsonFile } from "./createAndReadJsonFile";
+import { showFrameworkDocumentation } from "./showFrameworkDocumentation";
 
 export async function createNodeAPIFolder() {
     // Select Project complexity type
@@ -92,13 +93,13 @@ export async function createNodeAPIFolder() {
 
     if (extensionType === extensions.javascript.name && frameworkSelection) {
         await createAndReadJsonFile(extensionType);
-        // runFrameworkCommand(frameworkSelection.toLocaleLowerCase());
-        return showInformationMessage(frameworkSelection.toLocaleLowerCase());
+        runNodeFrameworkCommand(frameworkSelection.toLocaleLowerCase());
+        return await showFrameworkDocumentation(frameworkSelection);
     }
 
     if (extensionType === extensions.typescript.name && frameworkSelection) {
         await createAndReadJsonFile(extensionType);
-        // runFrameworkCommand(`${frameworkSelection.toLocaleLowerCase()} ${framework_typescript_installation}${frameworkSelection.toLocaleLowerCase()}`);
-        return showInformationMessage(`${frameworkSelection.toLocaleLowerCase()} ${framework_typescript_installation}${frameworkSelection.toLocaleLowerCase()}`);
+        runNodeFrameworkCommand(`${frameworkSelection.toLocaleLowerCase()} ${framework_typescript_installation}${frameworkSelection.toLocaleLowerCase()}`);
+        return await showFrameworkDocumentation(frameworkSelection);
     }
 }

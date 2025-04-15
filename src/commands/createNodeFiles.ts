@@ -3,6 +3,10 @@ import * as path from "path";
 import { extensions, messages, showErrorMessage, showInformationMessage, workspaceFolder, messageToFile } from "../utils/config";
 
 export async function createNodeFiles(extensionType: string) {
+    if (!workspaceFolder) {
+        showErrorMessage(messages.error.workspacefolder_error);
+    }
+
     switch (extensionType) {
         case extensions.javascript.name:
             fs.writeFileSync(path.join(`${workspaceFolder}`, `server${extensions.javascript.symbol}`), messageToFile.javascript.comments);

@@ -30,7 +30,8 @@ export const messages = {
         workspacefolder_error: "No workspace folder found. Please open a workspace folder.",
         npm_error: "Error running npm command:",
         npm_stderror_error: "npm warning:",
-        framework_selection_error: "Framework needs to be selected because you selected Yes"
+        framework_selection_error: "Framework needs to be selected because you selected Yes",
+        framework_not_found_error: "Framework not found."
     },
     success: {
         installation_success: "Congratulations, your extension API Folder Generator is now active!",
@@ -172,6 +173,14 @@ export function showErrorMessage(message: any) {
 
 export function showInformationMessage(message: any) {
     return vscode.window.showInformationMessage(message);
+}
+
+export function showClickableInformationMessage(title: string, documentation: string) {
+    return vscode.window.showInformationMessage(`Click below to view ${title} documentation`, "Open Documentation").then((selection) => {
+        if (selection === "Open Documentation") {
+            vscode.env.openExternal(vscode.Uri.parse(documentation));
+        }
+    });
 }
 
 export const messageToFile = {
