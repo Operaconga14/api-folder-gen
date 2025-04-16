@@ -2,7 +2,7 @@
   "name": "api-folder-gen",
   "displayName": "Api Folder Generator",
   "description": "The API Project Generator is a Visual Studio Code extension designed to streamline the creation of API projects by automating folder structure setup, file generation, and package management. It provides a user-friendly interface for quickly generating a boilerplate for APIs, offering options for various levels of complexity: Simple, Advanced, and Complex.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "AmireJoseph",
   "icon": "images/apilogo.png",
   "repository": {

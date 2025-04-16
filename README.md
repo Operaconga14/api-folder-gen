@@ -18,6 +18,18 @@ The **API Project Generator** is a Visual Studio Code extension designed to stre
 ctrl + shift + p
 ```
 
+**For Node Developers**
+
+```
+Input: Generate Node API Folder
+```
+
+**For Python developers**
+
+```
+Input: Generate Python API Folder
+```
+
 ## Features
 
 ### Folder Structure Customization
